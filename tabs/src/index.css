@@ -1,0 +1,147 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+.section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1120px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid hsl(210 22% 49%);
+  border-radius: 50%;
+  border-top-color: hsl(210 22% 49%);
+  animation: spinner 0.6s linear infinite;
+  margin: 0 auto;
+}
+
+.jobs-center {
+  width: 80vw;
+  margin: 5rem auto;
+  max-width: 1120px;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+.job-btn {
+  background: transparent;
+  border-color: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.job-btn:hover {
+  color: #334155;
+  box-shadow: 0 2px #334155;
+}
+.active-btn {
+  color: #334155;
+  box-shadow: 0 2px #334155;
+}
+
+.job-company {
+  text-transform: uppercase;
+  color: #334155;
+  background: #cbd5e1;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  margin: 0.75rem 0;
+}
+.job-date {
+  color: hsl(210 22% 49%);
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.job-desc p {
+  color: #334155;
+  line-height: 1.5;
+}
+.job-icon {
+  color: hsl(210 22% 49%);
+}
+@media screen and (min-width: 992px) {
+  .jobs-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 4rem;
+  }
+}
