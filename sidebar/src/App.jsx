@@ -1,7 +1,16 @@
 import { useState } from 'react';
+import Home from './Home';
+import Sidebar from './Sidebar';
+import Modal from './Modal';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Home />
+      <Sidebar />
+      <Modal />
+    </>
+  );
 }
 
 export default App;
