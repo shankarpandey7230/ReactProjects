@@ -7,7 +7,7 @@ import { useGlobalContext } from './Context';
 
 function App() {
   const { isSidebarOpen } = useGlobalContext();
-  console.log(isSidebarOpen);
+  // console.log(isSidebarOpen);
   return (
     <main>
       <Navbar />

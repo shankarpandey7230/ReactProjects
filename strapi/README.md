@@ -49,3 +49,28 @@ The flow of the application should look something like this:
 - Set up a Submenu component with some general CSS. In the global context, set up a pageId with a default value of null and make it available in the app. In the NavLinks component, once the user moves the mouse over the link, set the pageId with the specific page ID. In the Submenu component, grab the pageId from the global context. Based on that ID, get the specific page from sublinks and render the page and links in the submenu. Add CSS to the Submenu component.
 
 - Fix multiple edge cases.
+
+##### 3D Effect
+
+These lines of CSS are used to apply a 3D transformation to an element on a webpage. Here's what each line does:
+transform: rotateX(-90deg) translateX(-50%);
+
+The transform property applies a transformation to an element. In this case, it applies two transformation: rotate(-90deg) and translateX(-50%).
+
+rotateX(-90deg) rotates the element around the X-axis by -90degrees, which means it will appear to be flipped upside down.
+translate(-50%) moves teh element horizontally by -50% of its own width, effectively shifting it to the left.
+
+Together, these transformations make the element appear to be rotated and tilted, as if it's viewed from above and at an angle.
+
+transform-origin:top;
+The transform-origin property specifies the point around which the element should be rotated and transformed. In this case, its set to top which means the transformation should be applied around the top edge of the element.
+
+perspective:100px;
+The perspective property defines the distance between the viewer and the element, and affects the appearance of 3D transformations. In this case, its set to 1000px, which means the element will appear to be tilted and rotated as if it's viewed from a distance of 1000 px
+Overall, these lines of CSS are used to create 3D effect for an element, making it appear to be tilted and rotated in a particular way.
+
+#### MouseEvents:
+
+onMouseEnter: This event is triggered when the mouse cursor enters the target element. It can be used to trigger an action when the user hover over the element.
+onMouseOver: This event is triggered when the mouse cursor is moved over the target element or any of its child elements. It can be used to track the mouse movement and trigger actions accordingly.
+onMouseLeave: This event is triggered when the mouse cursor leaves the target element. It can be used to trigger an action when the user stops hovering over the element
