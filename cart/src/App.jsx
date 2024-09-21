@@ -1,7 +1,14 @@
 import React from 'react';
+import Navbar from './Navbar';
+import CartContainer from './CartContainer';
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <main>
+      <Navbar />
+      <CartContainer />
+    </main>
+  );
 };
 
 export default App;
