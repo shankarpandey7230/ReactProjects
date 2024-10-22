@@ -1,0 +1,32 @@
+#### GET 
+
+GET http://localhost:8000
+
+##### GET TASKS
+
+GET http://localhost:8000/api/tasks
+
+
+#### POST TASKS
+
+POST http://localhost:8000/api/tasks
+Content-Type:  application/json
+
+{
+  
+"id":"faklsfjl1",
+"title":"Time flies",
+"isDone":"false"
+}
+
+
+#### PATCH TASKS
+ 
+ PATCH http://localhost:8000/api/tasks/fgasga1424
+ 
+ Content-Type: application/json
+
+ {
+
+"isDone":"true"
+ }

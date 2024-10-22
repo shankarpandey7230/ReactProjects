@@ -54,7 +54,7 @@ app.delete('api/tasks/:id', (req, res) => {
   res.json({ msg: 'task removed' });
 });
 app.use((req, res) => res.status(404).send('Route does not exist'));
-const port = process.env.PORT || 8000;
+const port = 8000;
 
 const startApp = () => {
   try {
